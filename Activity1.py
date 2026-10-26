@@ -31,7 +31,7 @@ class RestaurantOrderManagement:
     self.menu_quantities = {}
 
     for i, (item, price) in enumerate(self.menu_items.items(), start=1):
-        label = ttk.Label(frame, text=f"{item} (${price}):" font=("Arial", 12))
+        label = ttk.Label(frame, text=f"{item} (${price}):", font=("Arial", 12))
         
         label.grid(row=i, column=0, padx=10, pady=5)
         self.menu_labels[item] = label
